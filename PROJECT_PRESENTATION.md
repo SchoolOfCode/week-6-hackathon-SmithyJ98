@@ -16,3 +16,9 @@ For a stretch goal, I would have like to follow what I previously stated about i
 ![image](https://github.com/user-attachments/assets/df43dd4b-d4d5-48c8-b673-30982f8f66ee)
 
 # Writing the test
+
+I first started off by installing vitest and setting up an empty test inside of my main.test.js file, so I can ensure that the package has been installed correctly and working as intended when it returns this test with a pass.
+
+img
+
+Once I knew that was working, I then moved towards the kinds of results that my function would need to produce. This is where I decided, for the sake of the testing and kata, that I would leave it as true or false boolean values as they would be simpler to work with while still giving the required results. I updated my function so that it would pass a true result if the input was ["A", "B"], then made 2 tests that would check if the result was indeed true on an ["A", "B"] and if the function returned false when a ["C", "D"] input was used.

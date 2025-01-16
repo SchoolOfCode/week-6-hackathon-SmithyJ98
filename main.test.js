@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 import { isProperFormation } from "./main.js";
 
-test("test test should pass", () => {});
+test("test should pass", () => {});
 
 // Test case 1: Valid formation
 test("should return true for a valid formation", () => {

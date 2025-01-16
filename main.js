@@ -17,4 +17,4 @@
 
 //HAVE FUN :)
 
-function isProperFormation(formation) {}
+export function isProperFormation(formation) {}
