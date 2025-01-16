@@ -24,6 +24,7 @@ I first started off by installing vitest and setting up an empty test inside of 
 Once I knew that was working, I then moved towards the kinds of results that my function would need to produce. This is where I decided, for the sake of the testing and kata, that I would leave it as true or false boolean values as they would be simpler to work with while still giving the required results. I updated my function so that it would pass a true result if the input was ["A", "B"], then made 2 tests that would check if the result was indeed true on an ["A", "B"] and if the function returned false when a ["C", "D"] input was used.
 
 ![image](https://github.com/user-attachments/assets/0ca91d00-81cf-4a54-9beb-00b30b70033d)
-![image](https://github.com/user-attachments/assets/4ead1a90-96df-4056-a0c5-661a3c0baca3)
 ![image](https://github.com/user-attachments/assets/24c10324-a519-4aa6-b001-fc95e00334fe)
+![image](https://github.com/user-attachments/assets/4ead1a90-96df-4056-a0c5-661a3c0baca3)
 
+Now that I am aware of the syntax I will need to use for my test, I could apply this to all my other restrictions that I have given them such as there must be 11 values in the array or only being 1 GK. I would also apply messages to these tests to make it easier for the people creating the function to debug and work out what they havew not done correctly as the majority of them will simply be looking for a false value.

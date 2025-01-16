@@ -32,7 +32,7 @@ test("should return false as there is under 11 players", () => {
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).not.toBe(true);
+  expect(result).not.toBe(true, "The team must have exactly 11 players.");
 });
 
 // Test case 3: Invalid data (incorrect string used in the array)
@@ -54,7 +54,7 @@ test("should return false as there is a value in the array not equal to GK, DEF,
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).not.toBe(true);
+  expect(result).not.toBe(true, "The formation must be GK, DEF, MID or FWD.");
 });
 
 // Test case 4: Invalid formation (too many GK)
@@ -76,7 +76,7 @@ test("should return false if there are more than 1 GK", () => {
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).toBe(false);
+  expect(result).toBe(false), "There can only be one GK.";
 });
 
 // Test case 5: Invalid formation (too few DEF)
@@ -98,7 +98,7 @@ test("should return false if there are less than 3 DEF", () => {
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).toBe(false);
+  expect(result).toBe(false, "There must be at between 3 and 5 DEF.");
 });
 
 // Test case 6: Invalid formation (too many MID)
@@ -120,11 +120,11 @@ test("should return false if there are more than 5 MID", () => {
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).toBe(false);
+  expect(result).toBe(false, "There must be between 2 and 5 MID.");
 });
 
 // Test case 7: Invalid formation (too few FW)
-test("should return false if there are less than 3 DEF", () => {
+test("should return false if there are less than 1 FW", () => {
   // Arrange
   const formation = [
     "GK",
@@ -142,5 +142,5 @@ test("should return false if there are less than 3 DEF", () => {
   // Act
   const result = isProperFormation(formation);
   // Assert
-  expect(result).toBe(false);
+  expect(result).toBe(false, "There must between 1 and 4 FWD.");
 });
