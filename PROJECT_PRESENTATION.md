@@ -12,4 +12,7 @@ I have decided to make my function return a boolean result with console logs att
 
 For a stretch goal, I would have like to follow what I previously stated about incorperating exact positioning and perhaps throwing a reference to a time when the formation the user pushes through the function was used in real play, to make sure it not only covers the mostly used options like I have currently covered, but also the weirder times where things like having no FW on the pitch has happened. This would have required a database to be setup with all of these formations and the exact positions used, so the users input can be referenced and either fetch a matching result from the database or return an error if nothing could be found.
 
+![image](https://github.com/user-attachments/assets/ecdbb8c9-eae5-4507-a9e9-d4e0dcd061e9)
+![image](https://github.com/user-attachments/assets/df43dd4b-d4d5-48c8-b673-30982f8f66ee)
+
 # Writing the test
