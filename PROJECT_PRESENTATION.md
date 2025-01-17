@@ -59,5 +59,9 @@ Now that I am aware of the syntax I will need to use for my test, I could apply 
 
 # Bootcamper feedback
 
+Kit took on my Kata and got through the majority of the tests aside from the data validation on test 3 so overall managed to make a good attempt at my challenge. The feedback I got from his was the the challenge had a lot of parts so it would have been nicer to lay out my instructions in more of a structured format so you know exactly what you need to aim for in a step by step process. It had enough of a challenge to make you properly think but it was all using basic concepts we have already covered so it is doable with enough time and research. If we had more time, I would have like to get more feedback but I am appreciative of what I got.
+
+![image](https://github.com/user-attachments/assets/7faf4d1e-7f9c-4490-87ed-83c7df1ac216)
+
 
 
