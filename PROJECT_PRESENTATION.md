@@ -6,6 +6,24 @@ I decided on this function as I had the layout of it visualised with how it woul
 
 While this could be incorperated with a real database of formations used in professional matches around the world including precise positions such as LW, RB, CDM etc. I feel this works as a way to give a basic introduction to the game and the concept of how the players are organised on the pitch for someone who may just see it as people running around all over the place.
 
+# The Challenge
+
+Write a function that takes the intput of an array of 11 football positions from the following list (GK, DEF, MID, FW) and returns true if the selection of positions chosen would work as a valid formation or returns false otherwise.
+Feel free to add appropriate console logs to results to show an appropriate error or message. A valid formation would have the following:
+* Exactly 1 goalkeeper (GK)
+* Between 3 and 5 defenders (DEF)
+* Between 2 and 5 midfielders (MID)
+* Between 1 and 4 forwards (FW)
+* Exactly 11 players total
+
+Some examples of how it will be tested are:
+
+* TrueExample: isProperFormation([`GK`,`DEF`,`DEF`,`DEF`,`MID`,`MID`,`MID`,`MID`,`FW`,`FW`,`FW`,]);    This would return true
+* FalseExample: isProperFormation([`GK`,`DEF`,`DEF`,`DEF`,`DEF`,`DEF`,`MID`,`FW`,`FW`,`FW`,`FW`,]);     This would return false as theres less than 2 midfielders
+* FalseExample: isProperFormation([`GK`,`DEF`,`DEF`,`DEF`,`MID`,`MID`,`MID`,`FW`,`FW`,`FW`,]);          This would return false as theres less than 11 players
+
+HAVE FUN :)
+
 # Deciding what the tests will require from the function
 
 I have decided to make my function return a boolean result with console logs attatched to each depending on the what part of the function caused the return. Becasue of this, all my test will be looking for is the end result to either be true or false, and setting up the different my arrange areas with different array inputs in order to trigger the different exits from my function. While this is not checked in the testing, I also recommended that errors were console logged ontop of the results to show that the tests were passing for the correct methods.
@@ -27,4 +45,19 @@ Once I knew that was working, I then moved towards the kinds of results that my 
 ![image](https://github.com/user-attachments/assets/24c10324-a519-4aa6-b001-fc95e00334fe)
 ![image](https://github.com/user-attachments/assets/4ead1a90-96df-4056-a0c5-661a3c0baca3)
 
-Now that I am aware of the syntax I will need to use for my test, I could apply this to all my other restrictions that I have given them such as there must be 11 values in the array or only being 1 GK. I would also apply messages to these tests to make it easier for the people creating the function to debug and work out what they havew not done correctly as the majority of them will simply be looking for a false value.
+Now that I am aware of the syntax I will need to use for my test, I could apply this to all my other restrictions that I have given them such as there must be 11 values in the array or only being 1 GK. I would also apply messages to these tests to make it easier for the people creating the function to debug and work out what they havew not done correctly as the majority of them will simply be looking for a false value. The tests I decided to go for were:
+
+   * Pass a valid formation through the function and it will return true
+   * Insert under 11 values and it should return false
+   * Using a value that is not exactly GK, DEF, MID or FWD should return false
+   * Have more than 1 GK to return false
+   * Have less than 3 DEF to return false
+   * Have more than 5 MID to return false
+   * Have less than 1 FW to return false.
+
+![image](https://github.com/user-attachments/assets/842b5f9f-45f4-485f-a7d5-77f828dd39fc)
+
+# Bootcamper feedback
+
+
+
